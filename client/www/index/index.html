@@ -1,3 +1,140 @@
 <template name="index">
+  <link rel="stylesheet" type="text/css" href="/client/www/index/index.css"/>
+  {{> header}}
+  {{> bod}}
+  {{> footer}}
+</template>
+
+
+
+<template name= "header" >
+
+
+  <header class="header-user-dropdown">
+
+  	<div class="header-limiter">
+  		<h1><a href="#">Company<span>logo</span></a></h1>
+
+  		<nav>
+  			<a href="#">Overview</a>
+  			<a href="#">Surveys</a>
+  			<a href="#">Reports</a>
+  			<a href="#">Roles <span class="header-new-feature">new</span></a>
+  		</nav>
+
+
+  		<div class="header-user-menu">
+  			<img src="profile-pictures.png" alt="User Image"/>
+
+  			<ul>
+  				<li><a href="#">Settings</a></li>
+  				<li><a href="#">Payments</a></li>
+  				<li><a href="#" class="highlight">Logout</a></li>
+  			</ul>
+  		</div>
+
+  	</div>
+
+  </header>
+
+
+
+</template>
+
+<template name= "bod">
+  <img src="landscape.png" width="100%" style="opacity: 1"/>
+
+  <div class="ui link cards" style="border: 2px solid green;">
+    <div class="card">
+      <div class="image">
+        <img src="/images/avatar2/large/matthew.png">
+      </div>
+      <div class="content">
+        <div class="header">Matt Giampietro</div>
+        <div class="meta">
+          <a>Friends</a>
+        </div>
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="right floated">
+          Joined in 2013
+        </span>
+        <span>
+          <i class="user icon"></i>
+          75 Friends
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="/images/avatar2/large/molly.png">
+      </div>
+      <div class="content">
+        <div class="header">Molly</div>
+        <div class="meta">
+          <span class="date">Coworker</span>
+        </div>
+        <div class="description">
+          Molly is a personal assistant living in Paris.
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="right floated">
+          Joined in 2011
+        </span>
+        <span>
+          <i class="user icon"></i>
+          35 Friends
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="/images/avatar2/large/elyse.png">
+      </div>
+      <div class="content">
+        <div class="header">Elyse</div>
+        <div class="meta">
+          <a>Coworker</a>
+        </div>
+        <div class="description">
+          Elyse is a copywriter working in New York.
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="right floated">
+          Joined in 2014
+        </span>
+        <span>
+          <i class="user icon"></i>
+          151 Friends
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</template>
+
+<template name= "footer">
+  <div class="footer">
+    <nav>
+      <a href="#">Overview</a>
+      <a href="#">Surveys</a>
+      <a href="#">Reports</a>
+      <a href="#">Roles <span class="header-new-feature">new</span></a>
+    </nav>
+
+
+  </div>
+
 
 </template>
