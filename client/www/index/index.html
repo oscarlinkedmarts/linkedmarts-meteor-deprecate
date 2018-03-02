@@ -7,6 +7,9 @@
 
 
 
+
+
+
 <template name= "header" >
 
 
@@ -44,77 +47,126 @@
 <template name= "bod">
   <img src="landscape.png" width="100%" style="opacity: 1"/>
 
-  <div class="ui link cards" style="border: 2px solid green;">
-    <div class="card">
-      <div class="image">
-        <img src="/images/avatar2/large/matthew.png">
+  <div class="post-box">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="1.png" style="width:250px; height: 200px; display: block; margin-left: auto; margin-right: auto">
       </div>
-      <div class="content">
-        <div class="header">Matt Giampietro</div>
-        <div class="meta">
-          <a>Friends</a>
-        </div>
-        <div class="description">
-          Matthew is an interior designer living in New York.
-        </div>
+
+      <div class="mySlides fade">
+        <img src="2.png" style="width:250px; height: 200px;  display: block; margin-left: auto; margin-right: auto">
       </div>
-      <div class="extra content">
-        <span class="right floated">
-          Joined in 2013
-        </span>
-        <span>
-          <i class="user icon"></i>
-          75 Friends
-        </span>
+
+      <div class="mySlides fade">
+        <img src="3.png" style="width:250px; height: 200px;  display: block; margin-left: auto; margin-right: auto">
       </div>
-    </div>
-    <div class="card">
-      <div class="image">
-        <img src="/images/avatar2/large/molly.png">
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
       </div>
-      <div class="content">
-        <div class="header">Molly</div>
-        <div class="meta">
-          <span class="date">Coworker</span>
-        </div>
-        <div class="description">
-          Molly is a personal assistant living in Paris.
-        </div>
-      </div>
-      <div class="extra content">
-        <span class="right floated">
-          Joined in 2011
-        </span>
-        <span>
-          <i class="user icon"></i>
-          35 Friends
-        </span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-        <img src="/images/avatar2/large/elyse.png">
-      </div>
-      <div class="content">
-        <div class="header">Elyse</div>
-        <div class="meta">
-          <a>Coworker</a>
-        </div>
-        <div class="description">
-          Elyse is a copywriter working in New York.
+
+      <div class="post-info">
+  <div class="ui comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="1.png">
+    </a>
+    <div class="content">
+      <a class="author">Stevie Feliciano</a><span> has bought <span class="product"><a href="#">item</a></span></span>
+
+      <div class="metadata">
+        <div class="date">2 days ago</div>
+        <div class="rating">
+          <i class="star icon"></i>
+          5 Faves
         </div>
       </div>
-      <div class="extra content">
-        <span class="right floated">
-          Joined in 2014
-        </span>
-        <span>
-          <i class="user icon"></i>
-          151 Friends
-        </span>
+      <div class="text">
+        Hey guys, I hope this example comment is helping you read this documentation.
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="post-actions">
+<div class="ui labeled button" tabindex="0">
+  <div class="ui red button">
+    <i class="heart icon"></i> Like
+  </div>
+  <a class="ui basic red left pointing label">
+    1
+  </a>
+</div>
+<div class="ui labeled button" tabindex="0">
+  <div class="ui basic blue button">
+    <i class="fork icon"></i> share
+  </div>
+  <a class="ui basic left pointing blue label">
+    10
+  </a>
+</div>
+<div class="ui labeled button" tabindex="0">
+  <div class="ui basic blue button">
+    <i class="fork icon"></i> WishList
+  </div>
+  <a class="ui basic left pointing blue label">
+    15
+  </a>
+</div>
+
+</div>
+
+<div class="stats">
+<div class="tags">
+  <a class="ui image label">
+    <img src="hashtag.png">
+    stuff
+  </a>
+  <a class="ui image label">
+    <img src="hashtag.png">
+    cool
+  </a>
+  <a class="ui image label">
+    <img src="hashtag.png">
+    product
+  </a>
+</div>
+<div class="stat">
+<div class="ui mini statistics">
+  <div class="grey statistic">
+      <div class="value">
+        49
+      </div>
+      <div class="label">
+        Views
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+      </div>
+    </div>
+
+
+
+      <!--
+
+
+      FOR FULL POST
+
+      <div class="post-gallery">
+        <img src="post-test.jpeg" class="post-main-pic"/>
+        <div class="post-gallery-rest">
+          <div class="post-gallery-more"><img src="post-second.png" /></div>
+          <div class="post-gallery-rating">5.0</div>
+          <div class="post-gallery-category">Travel</div>
+        </div>
+      </div>
+    -->
 
 
 
@@ -122,6 +174,38 @@
 
 
 
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
 </template>
 
 <template name= "footer">
