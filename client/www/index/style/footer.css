@@ -1,0 +1,16 @@
+.footer nav{
+  margin: auto;
+  border-top: 1px solid grey;
+  width: 100%;
+  text-align: center;
+  background-color: lightgrey;
+
+
+}
+
+
+div.footer{
+  width:inherit;
+  background-color: lightgrey;
+
+}
