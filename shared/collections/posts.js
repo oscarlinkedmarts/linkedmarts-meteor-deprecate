@@ -11,6 +11,18 @@ Posts.schema = new SimpleSchema({
 	},
 	author: {
 		type: String
+	},
+	comments: {
+		type: [Object]
+	},
+	cheers: {
+		type: [String]
+	},
+	products: {
+		type: [String]
+	},
+	timestamp: {
+		type: Date
 	}
 });
 
