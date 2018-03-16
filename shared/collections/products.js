@@ -6,19 +6,18 @@ Products.schema = new SimpleSchema({
 	title: {
 		type: String
 	},
-	pricing: {
-		type: Array
-	},
 	category: {
 		type: Object
 	},
-	transactions: {
-		type: Array
-	},
 	reviews: {
-		type: Array
+		type: [Object]
 	},
-	inventory: {
-		type: Number
+	variations: {
+		type: Object
+	},
+	upsell: {
+		type: Boolean
 	}
 });
+
+export const products_db = Products;
