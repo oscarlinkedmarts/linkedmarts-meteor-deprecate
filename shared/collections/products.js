@@ -17,6 +17,9 @@ Products.schema = new SimpleSchema({
 	},
 	upsell: {
 		type: Boolean
+	},
+	combo: {
+		type: [Object]
 	}
 });
 
