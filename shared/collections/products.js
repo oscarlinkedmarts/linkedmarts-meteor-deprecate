@@ -20,6 +20,9 @@ Products.schema = new SimpleSchema({
 	},
 	combo: {
 		type: [Object]
+	},
+	description: {
+		type: String
 	}
 });
 
