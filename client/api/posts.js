@@ -15,7 +15,7 @@ API.posts = {
 			posts_db.insert({
 				content: content,
 				whitelist: whitelist,
-				author: Meteor.user()
+				author: Meteor.userId()
 			});
 		}
 	}

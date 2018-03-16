@@ -6,7 +6,9 @@ Meteor.publish('posts_db', () => {
 		$or: [
 			{
 				whitelist: {
-					$in: Meteor.user()
+					$in: [
+						Meteor.userId()
+					]
 				}
 			},
 			{
