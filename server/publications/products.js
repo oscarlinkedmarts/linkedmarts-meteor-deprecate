@@ -7,7 +7,7 @@ Meteor.publish('products_db', () => {
 
 products_db.allow({
 	insert: (userId, doc) => {
-		return (userId === doc['author']);
+		return true;
 	},
 	update: (userId, doc, fieldNames, modifier) => {
 		return (userId === doc['author']);
