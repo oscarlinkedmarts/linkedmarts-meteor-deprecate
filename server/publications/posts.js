@@ -15,3 +15,15 @@ Meteor.publish('posts_db', () => {
 		]
 	});
 });
+
+posts_db.allow({
+	insert: (userId, doc) => {
+		return true;
+	},
+	update: (userId, doc, fieldNames, modifier) => {
+		return (userId === doc['author']);
+	},
+	remove: (userId, doc) => {
+		return (userId === doc['author']);
+	}
+});
