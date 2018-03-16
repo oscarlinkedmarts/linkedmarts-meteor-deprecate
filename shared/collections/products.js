@@ -23,6 +23,9 @@ Products.schema = new SimpleSchema({
 	},
 	description: {
 		type: String
+	},
+	author: {
+		type: String
 	}
 });
 
