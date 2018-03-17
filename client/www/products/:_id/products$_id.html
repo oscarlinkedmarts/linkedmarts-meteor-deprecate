@@ -1,0 +1,100 @@
+<template name="products$_id">
+    <div class="products$_id">
+        <form class="ui form">
+            <div class="field">
+                <label>
+                    Title
+                </label>
+                <input type="text" name="title" placeholder="product name">
+            </div>
+            <div class="field">
+                <label>
+                    Description
+                </label>
+                <input type="text" name="description" placeholder="product brief">
+            </div>
+            {{#if existing}}
+                <table class="ui celled striped table">
+                    <thead>
+                    <tr>
+                        <th colspan="2">
+                            Variations
+                        </th>
+                        <th class="collapsing">
+                            <button class="ui primary button" type="button">
+                                Add Variation
+                            </button>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each item in getProduct.variations}}
+                        <tr>
+                            <td>
+                                {{item.title}}
+                            </td>
+                            <td>
+                                {{item.description}}
+                            </td>
+                            <td>
+                                ${{item.price}}
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+            {{/if}}
+            {{#if existing}}
+                <button class="ui negative button" type="button">
+                    Remove
+                </button>
+            {{else}}
+                <button class="ui positive button" type="button">
+                    push
+                </button>
+            {{/if}}
+        </form>
+    </div>
+    <div class="ui modal" id="id_products$_id_modal_variations">
+        <div class="header">
+            Product Variation
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="https://semantic-ui.com/images/wireframe/image.png">
+            </div>
+            <div class="description">
+                <form class="ui form">
+                    <div class="field">
+                        <label>
+                            Title
+                        </label>
+                        <input type="text" name="title" placeholder="variation ID">
+                    </div>
+                    <div class="field">
+                        <label>
+                            Description
+                        </label>
+                        <input type="text" name="description" placeholder="brief">
+                    </div>
+                    <div class="field">
+                        <label>
+                            Price
+                        </label>
+                        <div class="ui right labeled input">
+                            <label class="ui label">
+                                $
+                            </label>
+                            <input type="text" placeholder="amount" id="id_products$_id_input_price">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui approve button">
+                push
+            </div>
+        </div>
+    </div>
+</template>
