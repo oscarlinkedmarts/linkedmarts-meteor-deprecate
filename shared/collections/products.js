@@ -13,7 +13,7 @@ Products.schema = new SimpleSchema({
 		type: [Object]
 	},
 	variations: {
-		type: Object
+		type: [Object]
 	},
 	upsell: {
 		type: Boolean
