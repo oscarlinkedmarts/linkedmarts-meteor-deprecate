@@ -8,19 +8,31 @@ Posts.schema = new SimpleSchema({
 		type: String
 	},
 	whitelist: {
-		type: [String]
+		type: Array
+	},
+	'whitelist.$': {
+		type: String
 	},
 	author: {
 		type: String
 	},
 	comments: {
-		type: [Object]
+		type: Array
+	},
+	'comments.$': {
+		type: Object
 	},
 	cheers: {
-		type: [String]
+		type: Array
+	},
+	'cheers.$': {
+		type: String
 	},
 	products: {
-		type: [String]
+		type: Array
+	},
+	'products.$': {
+		type: String
 	},
 	timestamp: {
 		type: Date

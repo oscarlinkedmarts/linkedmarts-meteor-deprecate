@@ -5,12 +5,30 @@ Transactions = new Mongo.Collection('wallets');
 
 Transactions.schema = new SimpleSchema({
 	debit: {
-		type: [Object],
+		type: Array,
 		defaultValue: []
 	},
+	'debit.$': {
+		type: Object
+	},
+	'debit.$.wallet': {
+		type: String
+	},
+	'debit.$.value': {
+		type: Number
+	},
 	credit: {
-		type: [Object],
+		type: Array,
 		defaultValue: []
+	},
+	'credit.$': {
+		type: Object
+	},
+	'credit.$.wallet': {
+		type: String
+	},
+	'credit.$.value': {
+		type: Number
 	}
 });
 

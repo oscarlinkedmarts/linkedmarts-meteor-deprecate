@@ -11,16 +11,25 @@ Products.schema = new SimpleSchema({
 		type: Object
 	},
 	reviews: {
-		type: [Object]
+		type: Array
+	},
+	'reviews.$': {
+		type: Object
 	},
 	variations: {
-		type: [Object]
+		type: Array
+	},
+	'variations.$': {
+		type: Object
 	},
 	upsell: {
 		type: Boolean
 	},
 	combo: {
-		type: [Object]
+		type: Array
+	},
+	'combo.$': {
+		type: Object
 	},
 	description: {
 		type: String

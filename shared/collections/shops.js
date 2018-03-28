@@ -8,7 +8,10 @@ Shops.schema = new SimpleSchema({
 		type: String
 	},
 	contacts: {
-		type: [Object]
+		type: Array
+	},
+	'contacts.$': {
+		type: Object
 	},
 	verified: {
 		type: Boolean
