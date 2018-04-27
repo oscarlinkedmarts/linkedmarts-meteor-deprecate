@@ -1,0 +1,15 @@
+
+.footer nav{
+  margin: auto;
+  border-top: 1px solid grey;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+
+.footer{
+	width: 100%;
+	background-color: red;
+}
