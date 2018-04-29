@@ -1,3 +1,477 @@
 <template name="index">
+	<head>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+  <link rel="stylesheet" type="text/css" href="/client/www/index/style/header.css"/>
+  <link rel="stylesheet" type="text/css" href="/client/www/index/style/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="/client/www/index/style/bod.css"/>
+  <link rel="stylesheet" type="text/css" href="/client/www/index/style/posts.css"/>
 
+
+
+  {{> header}}
+  {{> bod}}
+  {{> footer}}
+</template>
+
+
+
+
+
+<!--HEADER TEMPLATE-->
+<template name= "header" >
+  <!--UPPER HEADER-->
+	<header class="upper-header">
+	  	<!--LANGUAGE STRIP-->
+	  	<div class="lang-header">
+	  		<ul class="nav-options">
+	  			<li><a href="#Chinese">Chinese</a></li>
+	  			<li><a href="#English">English</a></li>
+	  			<li><a href="#Currency">HKD</a></li>
+	  		</ul>
+	  	</div>
+
+
+	  	<!--USER STRIP-->
+	  	<div class="user-header">
+
+		  		<ul class="left-options">
+		  			<li class="menu-icon"><a href="#Menu-Button"><img src="Logos/white/menu-icon.png"></a></li>
+		  			<li class="menu-icon"><a href="#Home-Button"><img src="Logos/Logo.png"></a></li>
+		  			<li class="menu-icon"><a href="#Settings-Button"><img src="Logos/white/settingslogo.png"></a></li>
+		  		</ul>
+
+
+
+		  		<ul class="right-options">
+		  			<li class="menu-icon user-icon"><a href="#User-Men1u-Button"><img src="users/profile-pictures.png"></a></li>
+		  			<li class="menu-icon right-icon"><a href="#Shop-Button"><img src="Logos/white/shop-icon.png"></a></li>
+		  			<li class="menu-icon right-icon"><a href="#Cart-Button"><img src="Logos/white/shopping-bag.png"></a></li>
+		  			<li class="menu-icon right-icon"><a href="#Rocket-Button"><img src="Logos/white/rocket.png"></a></li>
+		  			<li class="right-text"><a class="home" href="#Home-Button"><span>HOME</span></a></li>
+		  			<li class="right-text"><a class="user" href="#User-Button"><span>SARABETH</span></a></li>
+		  		</ul>
+
+
+
+
+	  	</div>
+	</header>
+
+  	<!--LOWER HEADER-->
+  	<header class="header-main" >
+
+	  	<div class="Logo">
+	      <!--LOGO-->
+	  		<a href="#Home-Button" ><img src="Logos/Logo.png" /></a>
+
+	  	</div>
+	    <div class="categories">
+	      	<ul>
+	      		<li><a href="#Fashion"><b>Fashion</b></a></li>
+	      		<li><a href="#Accessories"><b>Accessories</b></a></li>
+	      		<li><a href="#Electronics"><b>Electronics</b></a></li>
+	      		<li><a href="#Sports & Leisure"><b>Sports & Leisure</b></a></li>
+	      		<li><a href="#Food & Baverages"><b>Food & Baverages</b></a></li>
+	      		<li><a href="#Beauty & Health"><b>Beauty & Health</b></a></li>
+	      		<li><a href="#Handmade"><b>Handmade</b></a></li>
+	      		<li><a href="#Academic Resources"><b>Academic Resources</b></a></li>
+	      	</ul>
+		</div>
+
+
+	    <div class="search-bar">
+	        
+	          	<div class="search-box">
+	          		<span><a href="#Discover"><img src="Logos/black/search-icon.png" width="30px"></a></span>
+	         		<span><input type="text" placeholder="DISCOVER..."  ></span>
+	         		
+	         		<a href="#Tag-Summer-Wear"><span class="search-tag right-most" >SUMMER WEAR</span></a>
+	         		<a href="#Tag-Nike"><span class="search-tag">NIKE</span></a>
+	         		<a href="#Tag-Beats"><span class="search-tag">BEATS</span></a>
+	         		
+	         		
+	        	</div>
+	    </div>
+
+
+		 <div class="header-trending">
+		      	<ul>
+		      		<li>WHAT'S TRENDING TODAY: </li>
+		      		<li><a href="#Trending-NIKE-BOX2">NIKE BOX2</a></li>
+		      		<li><a href="#Trending-IPHONE-10">IPHONE 10</a></li>
+		      		<li><a href="#Trending-BIKINI">BIKINI</a></li>
+		      		<li><a href="#Trending-PANFRIED">PANFRIED</a></li>
+		      		<li><a href="#Trending-KOKO">KOKO</a></li>
+		      		<li><a href="#Trending-KIKO-LIPSTICK">KIKO LIPSTICK</a></li>
+		      	</ul>
+		 </div>
+	</header>
+
+	<header class="header-sidestrip">
+		<ul class="side-bar-options">
+			<li class="notification"><a href="#friends-notifications"><img src="Logos/white/friends-not.png"></a></li>
+			<li class="notification"><a href="#message-notifications"><img src="Logos/white/messages-not.png"></a></li>
+			<li class="notification"><a href="#alert-notifications"><img src="Logos/white/alert-not.png"></a></li>
+			<li class="notification"><a href="#wishlist-notifications"><img src="Logos/white/wishlist-not.png"></a></li>
+
+
+
+		</ul>
+
+		<ul class="friend-chat-options">
+			<li class="friend-for-chat active"><a href="#friend1-open-chat"><img src="users/profile-pictures.png" ><span class="act-icon"></span></a></li>
+			<li class="friend-for-chat active"><a href="#friend2-open-chat"><img src="users/profile-pictures.png"><span class="act-icon"></span></a></li>
+			<li class="friend-for-chat inactive"><a href="#friend3-open-chat"><img src="users/profile-pictures.png"></a></li>
+			<li class="friend-for-chat inactive"><a href="#friend4-open-chat"><img src="users/profile-pictures.png"></a></li>
+			<li class="friend-for-chat search-icon"><a href="#search-chat"><img src="Logos/black/search-chat.png"></a></li>
+
+
+
+		</ul>
+
+	</header>
+</template>
+
+
+
+<!--BODY TEMPLATE-->
+<template name= "bod">
+	<div class="wrapper">
+	  	<div class="wrapper-top"></div>
+
+
+
+	    <!--CHEERS COLOUMN-->
+	    <div class="cheers-col" id="cheers-col">
+	    	<!--title-->
+	    	
+	    	<div class="daily-cheers">
+	    		<a href="#Daily-cheers">
+	    			<h3 class="title"><img src="Logos/white/cheers.png">Daily Cheers</h3>
+	    		</a>
+	    		<div class="top-daily-png">
+	    			<a href="#Daily-cheers-link"><img class="top-prod-photo" src="Products/pizza.png"></a>
+	    		</div>
+	    		
+
+	    		<a href="#Daily-cheers-link">
+	    			<h3 class="title">Domino's Pizza</h3>
+	    		</a>
+
+	    		<h3 class="meta"><a href="#Cheers-for-post">15k<img src="Logos/white/cheers.png"></a><a href="#Coins-for-post">20<img src="Logos/white/coins.png"></a></h3>
+
+	    		
+	    		<p class="price-discount"><span class="old-price"> $129 </span> <span class="new-price">$99</span></p>
+
+	    		<p class="daily-cheers-time-left"><b>1 hour 22 minutes left!!</b></p>
+
+	    		<div class="divider"></div>
+
+	    		<h3 class="daily-cheers-actions-bar"><a href="#Like-post"><img src="Logos/white/like.png"></a><a href="#Comment-post"><img src="Logos/white/comment.png"></a><a href="#Share-post"><img src="Logos/white/share.png"></a><a href="#Wishlist-post"><img src="Logos/white/wishlist.png"></a></h3>
+
+	    	</div>
+
+	    	<div class="hot-cheers">
+	    		<a href="#Hot-cheers">
+	    			<h3 class="title">Hot Cheers</h3>
+	    		</a>
+	    		<div class="top-hot-png">
+	    			<a href="#Hot-cheers-link"><img class="top-prod-photo" src="Products/tempo.png"></a>
+	    		</div>
+	    		
+
+	    		
+
+	    		<h3 class="meta"><a href="#Hot-cheers-link">Tempo - </a><a href="#Cheers-for-post">15k<img src="Logos/black/cheers.png"></a><a href="#Coins-for-post">20<img src="Logos/black/coins.png"></a></h3>
+
+	    		<p class="Hot-cheers-description">Tempo tissue is selling all flavours for only <span class="new-price">$1.90</span> per pack!!</p>
+
+
+	    	</div>
+	    	<div class="recent-cheers">
+	    		<a href="#Recent-cheers">
+	    			<h3 class="title">Hot Cheers</h3>
+	    		</a>
+	    		<div class="top-hot-png">
+	    			<a href="#Recent-cheers-link"><img class="top-prod-photo" src="Products/doritos.png"></a>
+	    		</div>
+	    		
+
+	    		
+
+	    		<h3 class="meta"><a href="#Recent-cheers-link">Doritos - </a><a href="#Cheers-for-post">15k<img src="Logos/black/cheers.png"></a><a href="#Coins-for-post">20<img src="Logos/black/coins.png"></a></h3>
+
+	    		<p class="recent-cheers-description">Tempo tissue is selling all flavours for only <span class="new-price">$1.90</span> per pack!!</p>
+
+
+	    	</div>
+	    	
+	    </div>
+
+
+
+
+
+	    <!--POSTS COLOUMN-->
+	    <div class="post-col" id="post-col">
+	      	<!--1st POST-->
+	      	<div class="post-box posting">
+		      	<div class="post-wrap">
+		      		<a href="#userpage"><div class="inner post-user">
+		      			<img src="users/propic2.png">
+		      			
+		      		</div></a>
+		      		<div class="inner post-content">
+		      			<div class="post-more">
+		      				<a href="#More-on-post"><span class="dots"><b>...</b></span></a>
+		      			</div>
+		      			<div class="mid-wrapper">
+			      			
+			      			<a href="#add-pic"><div class="add-pic mid-sctn">
+			      				+	
+			      			</div></a>
+			      			
+			      			<div class="post-text-box mid-sctn">
+			      				<input type="text" placeholder="What are you up to SARABETH?">
+			      			</div>
+
+			      			<div class="posting-actions mid-sctn">
+			      				<a href="#tag-friend"><img src="Logos/black/tag-friend.png"></a><br>
+			      				<a href="#post-it"><img src="Logos/post-button.png" class="mid"></a><br>
+			      				<a href="#add-emoji"><img src="Logos/black/smile.png"></a>
+			      			</div>
+			      			<br>
+			      			
+		      			</div>
+		      			<ul class="tags">
+					      		<li>Recommended Tags: </li>
+					      		<li><a href="#Tag-NIKE">NIKE</a></li>
+					      		<li><a href="#Tag-BEATS">BEATS</a></li>
+					      		<li><a href="#Tag-SUMMER-WEAR">SUMMER WEAR</a></li>
+					      		<li class="more"><a href="#Tag-MORE">+</a></li>
+					      		
+		      				</ul>
+		      			
+
+		      		</div>
+				</div>
+			</div>
+	      	<div class="post-box">
+		      	<div class="post-wrap">
+		      		<a href="#userpage"><div class="inner post-user">
+		      			<img src="users/propic2.png"><br>
+		      			<div class="username">Woof</div>
+		      			<div class="post-time">2 minutes ago</div>
+		      		</div></a>
+		      		<div class="inner post-content">
+		      			<!--Upper line -->
+		      			<div class="post-more">
+		      				<a href="#More-on-post"><span class="dots"><b>...</b></span></a>
+		      			</div>
+		      			<div class="post-title">
+		      				<span class="username"><a href="#user-page">Woof</a></span> cheers an <span class="productname">"IPhone 6"</span> with <span class="friendname"><a href="#user-page">Colin</a></span>
+
+		      				<a href="#Influencer-List"><span class="influencers">
+		      					<img src="users/propic1.png">
+		      					<img class="overLap" src="users/propic2.png">
+		      					<span class="no-of-influencers">15 people influenced</span>
+		      				</span></a>
+		      			</div>
+
+		      			<div class="mid-wrapper">
+			      			<a href="#product-page"><img class="post-image mid-sctn" src="Products/iphone.jpg"></a>
+			      			
+			      			<div class="post-description mid-sctn">
+			      				<div class="prod-name">
+			      					<h3 class="meta"><span class="name"><a href="#product-page">IPHONE 6</a></span><a href="#Cheers-for-post">15k<img src="Logos/black/coins.png"></a><a href="#Coins-for-post">20<img src="Logos/black/cheers.png"></a></h3> 
+			      				</div>
+			      				<div class="user-comment">
+			      					IPHONE 6 is the best phone in the world
+			      				</div>
+			      				<div class="price-reduction">
+			      					<span class="old-price">$3900</span>
+			      					<span class="new-price">$3700</span>
+			      				</div>
+			      			</div>
+		      			</div>
+
+		      			<div class="cheers-now bottom-sctn">
+		      				<a href="#cheers-post"><span class="cheers-button">Cheers Now</span></a>
+		      			</div>
+		      			<div class="post-actions bottom-sctn">
+		      				<h3 class="daily-cheers-actions-bar">
+		      					<a href="#Like-post">15 <img src="Logos/black/like.png"></a>
+		      					<a href="#Comment-post">350 <img src="Logos/black/comment.png"></a>
+		      					<a href="#Share-post">40 <img src="Logos/black/share.png"></a>
+		      					<a href="#Wishlist-post">10 <img src="Logos/black/wishlist.png"></a>
+		      				</h3>
+		      			</div>
+
+		      		</div>
+				</div>
+			</div>
+			<div class="post-box needs-for-cheers">
+		      	<div class="post-wrap">
+		      		<a href="#userpage"><div class="inner post-user">
+		      			<img src="users/propic2.png"><br>
+		      			<div class="username">Woof</div>
+		      			<div class="post-time">2 minutes ago</div>
+		      		</div></a>
+		      		<div class="inner post-content">
+		      			<!--Upper line -->
+		      			<div class="post-more">
+		      				<a href="#More-on-post"><span class="dots"><b>...</b></span></a>
+		      			</div>
+		      			<div class="post-title">
+		      				<span class="username"><a href="#user-page">Woof</a></span> needs 1 more buddy to cheers a <span class="productname"><a href="#product-page">NIKE SHOES</a></span>
+
+		      				
+		      			</div>
+
+		      			<div class="mid-wrapper">
+			      			<a href="#product-page"><img class="post-image mid-sctn" src="Products/nike.jpg"></a>
+			      			
+			      			<div class="post-description mid-sctn">
+			      				<div class="prod-name">
+			      					<h3 class="meta"><span class="name"><a href="#product-page">NIKE SHOES</a></span><a href="#Cheers-for-post">50<img src="Logos/black/coins.png"></a><a href="#Coins-for-post">50k<img src="Logos/black/cheers.png"></a></h3> 
+			      				</div>
+			      				<div class="user-comment">
+			      					Classic type running shoes
+			      				</div>
+			      				<div class="price-reduction">
+			      					<span class="old-price">$900</span>
+			      					<span class="new-price">$799</span>
+			      				</div>
+			      			</div>
+		      			</div>
+
+		      			<div class="cheers-now bottom-sctn">
+		      				<a href="#cheers-post"><span class="cheers-button">Join Cheers</span></a>
+		      			</div>
+		      			<div class="post-actions bottom-sctn">
+		      				<h3 class="daily-cheers-actions-bar">
+		      					<a href="#Like-post">15 <img src="Logos/black/like.png"></a>
+		      					<a href="#Comment-post">350 <img src="Logos/black/comment.png"></a>
+		      					<a href="#Share-post">40 <img src="Logos/black/share.png"></a>
+		      					<a href="#Wishlist-post">10 <img src="Logos/black/wishlist.png"></a>
+		      				</h3>
+		      			</div>
+
+		      		</div>
+				</div>
+			</div>
+	    </div>
+
+
+
+	    <!--FRIENDS COLOUMN-->
+	    <div class="friend-col" id="friend-col">
+	      
+
+	      	<!--LIST OF FRIENDS PURCHASES-->
+	      	<div class="ui list friends-cheers">
+	      		
+	      		<!--TITLE FOR purchases-->
+			    <h1 align="center">FRIENDS' CHEERS</h1>
+		        
+
+
+		        <div class="item">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<br>
+		            	<p><a href="#frieds-link"><span class="user">Oscar</span></a>
+		            	<img src="Logos/black/cheers.png"> a 
+		            	<a href="#product-name"><b>XBox</b></a>
+		            	<span class="since">2 minutes ago</span></p>
+		          </div>
+		        </div>
+		        <div class="item">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<br>
+		            	<p><a href="#frieds-link"><span class="user">Sharon</span></a>
+		            	<img src="Logos/black/cheers.png"> a 
+		            	<a href="#product-name"><b>Dior</b></a>
+		            	<span class="since">12 minutes ago</span></p>
+		          </div>
+		        </div>
+		        <div class="item inprogress">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<span class="progress">In Progress</span>
+		            	<p><a href="#frieds-link"><span class="user">Jalice</span></a> needs 1 more friend to
+		            	<img src="Logos/black/cheers.png"> a 
+		            	<a href="#product-name"><b>XBox</b></a>
+		            	<span class="since">15 minutes ago</span></p>
+		          </div>
+		        </div>
+		        <div class="item inprogress">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<span class="progress">In Progress</span>
+		            	<p><a href="#frieds-link"><span class="user">Soma</span></a> needs 2 more friends to
+		            	<img src="Logos/black/cheers.png"> a 
+		            	<a href="#product-name"><b>LV Handbag</b></a>
+		            	<span class="since">16 minutes ago</span></p>
+		          </div>
+		        </div>
+		        
+	      	</div>
+
+	      	<!--LIST OF FRIENDS PURCHASES-->
+	      	<div class="ui list friends-cheers wishlist">
+	      		
+	      		<!--TITLE FOR purchases-->
+			    <h1 align="center">FRIENDS' WISHLIST</h1>
+		        
+
+
+		        <div class="item">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<br>
+		            	<p><a href="#product-name"><b>XBox</b></a> is added to <a href="#frieds-link"><span class="user">Oscar</span></a>'s Wishlist
+		            	<span class="since">2 minutes ago</span></p>
+		          </div>
+		        </div>
+		        <div class="item">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<br>
+		            	<p><a href="#product-name"><b>XBox</b></a> is added to <a href="#frieds-link"><span class="user">Oscar</span></a>'s Wishlist
+		            	<span class="since">2 minutes ago</span></p>
+		          </div>
+		        </div>
+		        <div class="item friends-wl">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<br>
+		            	<p><b><a href="#frieds-link"><span class="user">Jalice</span></a>'s</b> Wishlist
+		            	<span class="since"><a href="#wish-it"><img src="Logos/black/candle.png"></a> 5/11</span></p>
+		          </div>
+		        </div>
+		        <div class="item friends-wl">
+		          <a href="#frieds-link"><img class="propic" src="users/propic1.png"></a>         
+		          <div class="content">
+		          		<br>
+		            	<p><b><a href="#frieds-link"><span class="user">Soma</span></a>'s</b> Wishlist
+		            	<span class="since"><a href="#wish-it"><img src="Logos/black/candle.png"></a> 2/10</span></p>
+		          </div>
+		        </div>
+		        
+	      	</div>
+		</div>
+
+
+	</div>
+</template>
+
+
+
+<!--FOOTER TEMPLATE-->
+<template name= "footer">
+  
 </template>

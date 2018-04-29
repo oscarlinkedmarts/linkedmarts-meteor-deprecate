@@ -1,0 +1,336 @@
+.header-main {
+	background-color:white;
+	
+	
+	
+	box-sizing: border-box;
+  	
+  	margin-right: 50px;
+  	margin-top: 70px;
+}
+
+.header-main .Logo {
+	
+	text-align: center;
+	margin: 0 auto;
+}
+
+.header-main .Logo a img{
+	width: 200px;
+	margin-top: 50px; 
+
+}
+
+.header-main .search-bar{
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.header-main .search-bar .search-box input{
+	width: 300%;
+	outline: none;
+	height: 60px;
+	background-color: #F2F2F2;
+	margin-left: 30px;
+	padding-left: 15px;
+	border: 0px;
+	border-left: 1px solid black;
+
+	font-style: italic;
+	font-size: 19px;
+	letter-spacing: 4px;
+}
+.header-main .search-bar .search-box .right-most{
+	margin-right: 50px;
+}
+.header-main .search-bar .search-box .search-tag{
+	height: 30px;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	float: right;
+	margin: 0 7px;
+	margin-top: 14px;
+	padding: 6px;
+	color: #706F6F;
+}
+
+.header-main .search-bar .search-box span{
+	float: left;
+}
+.header-main .search-bar .search-box a {
+	height: 60px;
+	width: 60px;
+	margin-left: 25px;
+}
+.header-main .search-bar .search-box {
+	width: 75%;
+	height: 60px;
+	background-color: #F2F2F2;
+	margin: auto;
+	border-radius: 20px;
+}
+
+.header-main .categories ul{
+	text-align: center;
+	height: 60px;
+	padding: 20px;
+}
+
+
+
+.header-main .header-trending li{
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	height: 30px;
+	text-align: center;
+	color: #706F6F;
+	font-size: 16px;
+}
+.header-main .header-trending{
+	
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	padding: 20px;
+}
+.header-main .header-trending li a{
+	color: #706F6F;
+	font-size: 16px;
+}
+.header-main .header-trending ul{
+	width: 850px;
+	text-align: center;
+	margin: auto;
+}
+
+.header-main .categories li{
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	margin-left: 50px;
+	text-align: center;
+
+
+}
+.header-main .categories li b{
+	color: #706F6F;
+}
+
+
+
+
+
+
+
+
+/*
+LANGUAGE STRIP
+
+.upper-header .lang-header --> TOP LINE WITH LANGUAGE AND CURRENCY CHOICES
+
+USER STRIP
+
+.upper-header .user-header --> the gradient line with menu buttons
+
+ 	->	.left-options 	--> 3 buttons on the left of the screen
+ 	->	.right-options 	--> the user nav bars on the right
+ 			-> 	.user-icon 	->	a 	-> img
+
+*/
+
+.upper-header{
+	height: 65px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.upper-header .lang-header {
+	width: 100%;
+	height: 30px;
+	background-color: white;
+}
+
+.upper-header .lang-header ul, .upper-header .user-header ul{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 10%;
+    padding: 0;
+	width: 300px;
+	overflow: hidden;
+	
+}
+
+.upper-header .lang-header ul li, .upper-header .user-header ul li{
+	float: left;
+}
+.upper-header .lang-header ul li a, .upper-header .user-header ul li a{
+	display: block;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: black;
+	text-align: center;
+	margin: auto;
+	width: 75px;
+	height: 30px;
+}
+
+.upper-header .lang-header ul li a:hover, .upper-header .user-header ul li a:hover{
+	color: grey;
+	cursor: pointer;
+}
+
+.upper-header .user-header {
+	width: 100%;
+	height: 40px;
+	background: linear-gradient(to right, #33C7C4 , #2F37AD);
+}
+.upper-header .user-header .menu-icon a{
+	padding: 0;
+
+	}
+.upper-header .user-header ul li a{
+	margin: auto;
+	width: 75px;
+	height: 40px;
+	
+
+}
+
+.upper-header .user-header .left-options .menu-icon a img{
+	width: 30px;
+	height: 25px;
+	margin-top: 7px;
+}
+
+.upper-header .user-header .right-options  a img{
+	margin-top: 6px;
+	width: 30px;
+	height: 30px;
+}
+.upper-header .user-header .left-options, .upper-header .user-header .right-options{
+	float: left;
+}
+.upper-header .user-header .right-options{
+	float: right;
+	width: 600px;
+	}
+.upper-header .user-header .right-options li {
+	float: right;
+}
+.upper-header .user-header .right-options .user-icon a{
+	width: 50px;
+}
+.upper-header .user-header .right-options .user-icon img{
+	border-radius: 30px;
+	border: 2px solid #EF8877;
+	padding: 0;
+}
+.upper-header .user-header .right-options .right-icon a img{
+	width: 30px;
+	height: 30px;
+}
+
+.upper-header .user-header .right-options .right-icon a{
+	width: 30px;
+	margin: 0px 10px;
+}
+.upper-header .user-header .right-options .right-text .home{
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	width: 80px;
+	color: white;
+}
+
+.upper-header .user-header .right-options .right-text .user{
+	width: 100px;
+	color: white;
+
+}
+.upper-header .user-header .right-options .right-text span{
+	display: block;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+
+
+
+
+
+/*
+HEADER SIDESTRIP
+
+
+
+*/
+
+
+.header-sidestrip{
+	position: fixed;
+	top: 70px;
+	right: 0;
+	background: linear-gradient(to top, #33C7C4 , #2F37AD);
+	width: 50px;
+	height: 100%;
+}
+
+.header-sidestrip .friend-chat-options{
+	position: absolute;
+  	bottom: 100px;
+}
+.header-sidestrip .friend-chat-options .friend-for-chat{
+	margin: 0px;
+	
+}
+.header-sidestrip .friend-chat-options .inactive a img{
+	
+	opacity: 0.74;
+}
+.header-sidestrip .friend-chat-options .active .act-icon{
+	position: absolute;
+	top: 10;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #FFFD38;
+	border-radius: 5px;
+}
+.header-sidestrip .friend-chat-options li a img{
+	width: 100%;
+	height: auto;
+
+}
+
+.header-sidestrip .side-bar-options, .header-sidestrip .friend-chat-options{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.header-sidestrip .side-bar-options li, .header-sidestrip .friend-chat-options li{
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+	padding: 5px;
+
+}
+.header-sidestrip .side-bar-options li a img{
+	width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+

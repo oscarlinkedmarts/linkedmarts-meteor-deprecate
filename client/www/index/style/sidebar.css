@@ -1,0 +1,214 @@
+.wrapper-top{
+
+	height: 50px;
+
+	background-color: #F2F2F2;
+	border-radius: 20px 20px 0 0;
+}
+.wrapper{
+	
+	margin-right: 50px;
+}
+
+
+.cheers-col, .friend-col{
+  width: 20%;
+  background-color: #F2F2F2;
+}
+
+.post-col{
+  width: 60%;
+  float: left;
+  
+  background-color: #F2F2F2;
+}
+
+
+
+/*CHEERS COL*/
+.cheers-col{
+  float: left;
+
+  height: 1000px;
+  
+  margin: auto;
+}
+
+.cheers-col .daily-cheers{
+	
+	width: 100%;
+	background: linear-gradient(to right, #33C7C4 , #2F37AD);
+	padding-top: 15px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+}
+
+.cheers-col .daily-cheers .title, .cheers-col .daily-cheers .meta,
+.cheers-col .hot-cheers .title, .cheers-col .hot-cheers .meta,
+.cheers-col .recent-cheers .title, .cheers-col .recent-cheers .meta {
+	line-height: 32px;
+	text-align: center;
+	color: white;
+	margin:0;
+}
+
+.cheers-col .hot-cheers, .cheers-col .recent-cheers{
+	margin-top: 20px;
+	width: 100%;
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+}
+
+.cheers-col .hot-cheers .title, .cheers-col .recent-cheers .title{
+	color: #EF8877;
+}
+
+.cheers-col .daily-cheers .meta a{
+	color: white;
+	font-style: italic;
+}
+.cheers-col .daily-cheers .title img, .cheers-col .daily-cheers .meta img,
+.cheers-col .hot-cheers .meta img, .cheers-col .recent-cheers .meta img{
+	vertical-align: middle;
+	width: 35px;
+	margin: 0 6px;
+
+}
+.cheers-col .daily-cheers .top-daily-png, .cheers-col .hot-cheers .top-hot-png,
+.cheers-col .recent-cheers .top-hot-png{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.cheers-col .daily-cheers .top-prod-photo, .cheers-col .recent-cheers .top-prod-photo{
+	width: 50%;
+	margin: auto;
+}
+.cheers-col .daily-cheers p, .cheers-col .hot-cheers p, .cheers-col .recent-cheers p{
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	font-style: italic;
+}
+.cheers-col .daily-cheers .price-discount {
+	color: yellow;
+}
+.cheers-col .daily-cheers .price-discount .old-price{
+	color: white;
+	text-decoration: line-through;
+}
+.cheers-col .daily-cheers .divider{
+	width: 90%;
+	margin: auto;
+	border-bottom: 2px solid white;
+	margin-bottom: 10px;
+}
+
+.cheers-col .daily-cheers .daily-cheers-actions-bar{
+	line-height: 32px;
+	text-align: center;
+	margin-top: 0;
+}
+
+.cheers-col .daily-cheers .daily-cheers-actions-bar a img{
+	vertical-align: middle;
+	width: 35px;
+	margin: 0 12px;
+}
+
+.cheers-col .hot-cheers .meta a, .cheers-col .recent-cheers .meta a{
+	color: #717070;
+}
+
+.cheers-col .hot-cheers p, .cheers-col .recent-cheers p{
+	color: #717070;
+	width: 80%;
+	margin:auto;
+}
+.cheers-col .hot-cheers .top-hot-png a img, .cheers-col .recent-cheers .top-hot-png a img{
+	width: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.friend-col{
+  float: right;
+
+  /*background-color: #F2F2F2;*/
+}
+.friend-col .friends-cheers{
+	margin-top: 20px;
+	width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	padding-bottom: 20px;
+	
+}
+.friend-col .friends-cheers h1{
+	color: #717070;
+	font-size: 20px;
+}
+.friend-col .friends-cheers .item{
+	height: 70px;
+}
+.friend-col .friends-cheers .item .propic{
+	display: inline-block; 
+	float: left;
+	width: 60px;
+	border: 3px solid #2F37AD;
+	border-radius: 40px;
+	vertical-align: middle;
+	margin-right: 10px;
+
+}
+
+.friend-col .friends-cheers .item .content{
+	margin: auto;
+	color: #717070;
+}
+
+.friend-col .friends-cheers .item .content a{
+	color: #717070;
+}
+.friend-col .friends-cheers .item .content img{
+	width: 20px;
+	vertical-align: middle;
+}
+.friend-col .friends-cheers .item .content .since{
+	float: right;
+	margin-right: 10px;
+	font-size: 10px;
+}
+
+.friend-col .friends-cheers .item .content .progress{
+	border: 1px solid #F1A295;
+	border-radius: 10px;
+	padding: 1px;
+	color: #F1A295;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
