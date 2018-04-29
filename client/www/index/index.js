@@ -16,6 +16,10 @@ Template.index.onRendered(function() {
 
 Template.index.events({
 
+	'click a[href=\'#add-pic\']': () => {
+		$("a[href='#add-pic'] + input[type='file']").trigger("click");
+	}
+
 });
 
 Template.index.helpers({});
