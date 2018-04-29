@@ -7,6 +7,9 @@ Posts.schema = new SimpleSchema({
 	content: {
 		type: String
 	},
+	picture: {
+		type: String
+	},
 	whitelist: {
 		type: Array
 	},

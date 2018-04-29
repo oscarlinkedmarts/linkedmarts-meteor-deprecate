@@ -11,9 +11,10 @@ API.posts = {
 		return posts_db.find().fetch();
 	},
 
-	createPost: (content, whitelist) => {
+	createPost: (picture, content, whitelist) => {
 		if (Meteor.user()) {
 			posts_db.insert({
+				picture: picture,
 				content: content,
 				whitelist: whitelist,
 				author: Meteor.userId()
